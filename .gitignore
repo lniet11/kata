@@ -31,3 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
+# Ignorar configuraciones de AWS
+src/main/resources/application.properties
