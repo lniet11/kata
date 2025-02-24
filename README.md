@@ -45,7 +45,7 @@ Este proyecto es una aplicación de reservas de cine que permite a los usuarios 
 1. **Clonar el repositorio**:
 
    ```bash
-   git clone https://github.com/tu-usuario/cinema-reservation.git
+   git clone [https://github.com/tu-usuario/cinema-reservation.git](https://github.com/lniet11/kata.git)
    cd cinema-reservation
 2. Accede al directorio del backend y compílalo:
 Si usas Maven:
