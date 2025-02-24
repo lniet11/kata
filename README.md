@@ -47,3 +47,75 @@ Este proyecto es una aplicación de reservas de cine que permite a los usuarios 
    ```bash
    git clone https://github.com/tu-usuario/cinema-reservation.git
    cd cinema-reservation
+2. Accede al directorio del backend y compílalo:
+Si usas Maven:
+
+bash
+Copiar
+cd backend
+mvn clean install
+
+O si usas Gradle:
+
+bash
+Copiar
+cd backend
+gradle build
+3. Ejecuta la aplicación de Spring Boot:
+
+Si usas Maven:
+
+bash
+Copiar
+mvn spring-boot:run
+O si usas Gradle:
+
+bash
+Copiar
+gradle bootRun
+Esto levantará el servidor de Spring Boot en http://localhost:8080, donde las API estarán disponibles.
+-Frontend (React)
+1. Accede al directorio del frontend:
+
+bash
+Copiar
+cd frontend
+2. Instala las dependencias de npm:
+
+bash
+Copiar
+npm install
+3. Ejecuta la aplicación de React:
+
+bash
+Copiar
+npm start
+
+Esto abrirá la aplicación en http://localhost:3000 en tu navegador.
+
+Conexión entre Backend y Frontend
+Asegúrate de que el backend (Spring Boot) esté corriendo antes de intentar interactuar con la aplicación frontend. React realizará las solicitudes a las API REST de Spring Boot en el puerto 8080 (por defecto).
+
+API Endpoints:
+El backend expone las siguientes API REST:
+
+Películas (Movies)
+
+GET /api/movies: Obtiene todas las películas.
+POST /api/movies: Crea una nueva película.
+GET /api/movies/{id}: Obtiene los detalles de una película por su ID.
+PUT /api/movies/{id}: Actualiza los detalles de una película.
+DELETE /api/movies/{id}: Elimina una película.
+Salas (Rooms):
+GET /api/rooms: Obtiene todas las salas.
+POST /api/rooms: Crea una nueva sala.
+GET /api/rooms/{id}: Obtiene los detalles de una sala por su ID.
+PUT /api/rooms/{id}: Actualiza los detalles de una sala.
+DELETE /api/rooms/{id}: Elimina una sala.
+Reservas (Reservations):
+GET /api/reservations: Obtiene todas las reservas.
+POST /api/reservations: Crea una nueva reserva.
+GET /api/reservations/{id}: Obtiene los detalles de una reserva por su ID.
+PUT /api/reservations: Actualiza los detalles de una reserva.
+DELETE /api/reservations/{id}: Elimina una reserva.
+
